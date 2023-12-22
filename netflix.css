@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Livvic&family=Noto+Serif+Bengali&family=Poppins:wght@500&family=Tilt+Neon&display=swap');
+@import url('https://fonts.cdnfonts.com/css/netflix-font');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: auto !important;
+    overflow-x: hidden !important;
+    zoom: 100%;
+}
+
+@media (max-width:1094px) {
+    body {
+        width: fit-content;
+    }
+
+    body .main{
+        height: 100vh;
+    }
+    body .main .black-theme{
+        height: 100vh;
+    }
+    .input-email {
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 47px;
+    }
+
+    .first-section {
+        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
+    }
+
+    .tv-image img {
+        height: 354px;
+    }
+
+    .nevigation :nth-child(1) img {
+        margin-left: 0px;
+    }
+
+    .right-side span h2 {
+        text-align: center;
+    }
+
+    .right-side  div {
+        text-align: center;
+    }
+
+    .main :nth-child(0) nav {
+        max-width: 100vw;
+    }
+
+    .nevigation {
+        padding: 0px 9px;
+    }
+    svg.netflix-icon{
+        width: 98px;
+    }
+    .options button.english{
+        width: 79px;
+    }
+
+    .options button.sign{
+        width: 60px;
+    }
+
+    .left-side :nth-child(2) video {
+        height: 21vh;
+        display: flex;
+        padding: 75px 50px 0px 45px;
+        margin: auto auto;
+    }
+
+
+}
+
+@media (max-width:1094px) {}
+
+
+.main {
+    background-image: url('all-chanels.jpg');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    top: 0;
+    background-size: max(1725px, 100vw);
+    position: relative;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.black-theme {
+    top: 0;
+    background-color: black;
+    opacity: 0.64;
+    height: 91vh;
+    position: absolute;
+    width: 100%;
+}
+
+.netflix-icon {
+    top: 21px;
+}
+
+nav {
+    top: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    margin: auto;
+    justify-content: space-between;
+    margin: 0px 0px;
+    max-width: 100vw;
+    padding: 0px 120px;
+    position: relative;
+}
+
+.options {
+    gap: 35px;
+    display: flex;
+    align-items: center;
+}
+
+button.sign:hover {
+    cursor: pointer;
+}
+
+.options .english {
+    background-color: black;
+    opacity: 0.7;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    width: 134px;
+    height: 31px;
+}
+
+.options .sign {
+    border: none;
+    border-radius: 3px;
+    background-color: red;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 90px;
+    height: 36px;
+}
+
+.texts {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin: auto auto;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    gap: 9px;
+}
+
+.texts h2 {
+    font-size: 40px;
+}
+
+.input-email {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    top: 20px;
+    margin: auto auto;
+    position: relative;
+    z-index: 3;
+    align-items: center;
+}
+
+.email {
+    height: 50px;
+    width: 320px;
+    padding: 0px 4px;
+    text-align: left;
+    background-color: black;
+    opacity: 0.56;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+}
+
+button.get-started {
+    width: 169px;
+    height: 55px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif; */
+    border: none;
+    border-radius: 4px;
+}
+
+button.get-started:hover {
+    cursor: pointer;
+}
+
+.section-breaker {
+    height: 6px;
+    width: 100%;
+    /* background-color: rgb(143, 143, 143); */
+    background-color: rgb(35 35 35);
+}
+
+
+.first-section {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    margin: auto auto;
+    gap: 64px;
+    width: 100%;
+    height: 80vh;
+}
+
+.right-side {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.right-side :nth-child(1) {
+    font-size: 43px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.right-side div {
+    font-size: 18px;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.left-side {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+}
+
+.tv-image {
+    position: relative;
+    z-index: 4;
+}
+
+.video video {
+    height: 35vh;
+    display: flex;
+    padding: 100px 50px 0px 45px;
+    margin: auto auto;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width:898px) {
+    .left-side :nth-child(1) img {
+        height: 57vh;
+        overflow: hidden;
+    }
+
+    .left-side :nth-child(2) video {
+        height: 31.8vh;
+        padding-top: 63px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width:250%) {
+
+    .main {
+        height: 100vh;
+    }
+
+}
+
+.netflix-icon {
+    width: 118px;
+}
+
+@media (max-width:3840) {
+    .main{
+        height: 100vh;
+    }
+}
